@@ -1,4 +1,4 @@
-name: Daily Commit
+name: Daily Commit 23f3003478@ds.study.iitm.ac.in
 
 on:
   schedule:
@@ -12,7 +12,7 @@ jobs:
   commit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repository 23f3003478@ds.study.iitm.ac.in
         uses: actions/checkout@v4
 
       - name: Configure Git (23f3003478@ds.study.iitm.ac.in)
@@ -20,11 +20,11 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "23f3003478@ds.study.iitm.ac.in"
 
-      - name: Make a Change
+      - name: Make a Change 23f3003478@ds.study.iitm.ac.in
         run: |
           echo "Last run: $(date)" > last_run.txt  # Always modify the file
 
-      - name: Commit and Push Changes
+      - name: Commit and Push Changes 23f3003478@ds.study.iitm.ac.in
         run: |
           git add last_run.txt
           git commit -m "Automated daily commit at $(date)" || echo "No changes to commit"
